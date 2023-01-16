@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UseController;
 use App\Http\Controllers\HomeController;
 
 /*
@@ -17,3 +18,4 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/act', [UseController::class, 'act']);
