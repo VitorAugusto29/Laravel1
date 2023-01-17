@@ -15,7 +15,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [UseController::class, 'welcome']);
+  
 Route::get('/act', [UseController::class, 'act']);

@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 
 class UseController extends Controller
 {
-    public function act()
+    public function act ()
     {
     return view ('act');
-    }
 
+    }
+    public function welcome ()
+    {
+        return view ('welcome');
+    }
 }
