@@ -7,6 +7,8 @@
     <title>Templates</title>
 </head>
 <body>
-    <h1>Meu primeiro template Blade</h1>
+    <h1>Olá Mundo!</h1>
+
+    <h2>Seja bem-vindo</h2>
 </body>
 </html>
