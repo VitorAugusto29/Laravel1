@@ -7,13 +7,11 @@ use Illuminate\Http\Request;
 
 class UseController extends Controller
 {
-    public function act ()
+    public function blade()
     {
-    return view ('act');
+   
+    $name = 'João';
 
-    }
-    public function welcome ()
-    {
-        return view ('welcome');
+    return view('hello', compact('name'));
     }
 }

@@ -15,6 +15,5 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [UseController::class, 'welcome']);
-  
-Route::get('/act', [UseController::class, 'act']);
+Route::get('/', [UseController::class, 'blade']);
+
