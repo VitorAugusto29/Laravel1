@@ -7,18 +7,12 @@ use Illuminate\Http\Request;
 
 class UseController extends Controller
 {
-    public function blade()
+    public function clients()
     {
-   
-    $name = 'João';
 
-    return view('hello', compact('name'));
+    $names = ['Joao', 'Maria'];
+
+    return view ('clients', compact('names'));
     }
-    public function dbz()
-    {
-        $energy = 8000;
 
-        return view('dbz', compact ('energy'));
-
-    }
 }
