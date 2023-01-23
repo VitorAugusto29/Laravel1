@@ -8,10 +8,15 @@ use Illuminate\Support\Facades\Storage;
 
 class UseController extends Controller
 {
-   public function photo()
-   {
-    Storage::put('public/file.jpg', $photo);
-   }
 
+    public function photo(Request $request)
+{
+ // Armazenar imagem
+ $path = $request->photo->store('public');
+
+ return $path;
+}
+
+   
 
 }
