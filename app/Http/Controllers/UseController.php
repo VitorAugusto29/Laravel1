@@ -10,7 +10,7 @@ class UseController extends Controller
 {
    public function photo()
    {
-    Storage::put('public/file.jpg', photo);
+    Storage::put('public/file.jpg', $photo);
    }
 
 
