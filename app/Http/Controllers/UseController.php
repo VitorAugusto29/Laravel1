@@ -14,4 +14,11 @@ class UseController extends Controller
 
     return view('hello', compact('name'));
     }
+    public function dbz()
+    {
+        $energy = 8000;
+
+        return view('dbz', compact ('energy'));
+
+    }
 }

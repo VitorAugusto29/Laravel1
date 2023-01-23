@@ -16,4 +16,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [UseController::class, 'blade']);
+Route::get('/dbz', [UseController::class, 'dbz']);
+
 
