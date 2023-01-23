@@ -18,6 +18,6 @@ use App\Http\Controllers\HomeController;
 Route::get('/a', [UseController::class, 'blade']);
 Route::get('/dbz', [UseController::class, 'dbz']);
 Route::get('/', [UseController::class, 'clients']);
-Route::get('photo', [UseController::class, 'photo']);
+Route::get('/photo', [UseController::class, 'photo']);
 
 
