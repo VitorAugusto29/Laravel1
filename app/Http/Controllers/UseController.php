@@ -7,12 +7,10 @@ use Illuminate\Http\Request;
 
 class UseController extends Controller
 {
-    public function clients()
-    {
+   public function photo()
+   {
+    Storage::put('public/file.jpg', photo);
+   }
 
-    $names = ['Joao', 'Maria'];
-
-    return view ('clients', compact('names'));
-    }
 
 }
